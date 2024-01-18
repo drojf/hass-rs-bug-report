@@ -1,0 +1,19 @@
+[package]
+name = "rust-home-assistant-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+hass-rs = { version = "0.2", features = ["async-std-runtime"] }
+
+lazy_static = "1.4.0"
+env_logger = "0.9"
+
+async-std = "1.12"
+
+anyhow = "1.0"
